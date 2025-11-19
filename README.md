@@ -27,16 +27,52 @@ Here, Qtt & Qt+1t+1 are present state & next state respectively. So, T flip-flop
 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒Q(t+1)=T⊕Q(t)
 
 **Procedure**
+1.Declare input T and clock, and output Q.
 
-/* write all the steps invloved */
+2.Use an always block triggered on the positive edge of the clock (posedge clock).
+
+3.Inside the always block:
+
+If T = 1 → Toggle the output (Q = ~Q)
+
+If T = 0 → Keep Q unchanged.
+
+4.End the always block.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+T Flip-Flop (with async reset)
+module t_ff (
+    input  wire clk, rst, T,
+    output reg Q 	  
+);
+
+  initial begin
+     Q<=1'b0;
+	 end
+  
+  
+	 always @(posedge clk or posedge rst) begin
+	
+        if (rst)
+            Q <= 1'b0;       // Reset
+        else if (T)
+            Q <= ~Q;         // Toggle if T=1
+        else
+            Q <= Q;          // Hold if T=0
+    end
+endmodule
+
+DEVELOPED BY:MUGILARASI E
+
+REGISTER NO: 25017644
 
 **RTL LOGIC FOR FLIPFLOPS**
+<img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/4c6d6aa9-0a9a-47a4-980f-01ee19de275b" />
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+<img width="1920" height="1080" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/c062c50e-78f8-4622-8730-cacd17eba2c3" />
+
 
 **RESULTS**
+Thus the T-flipflop using verilog and validating their functionality using their functional tables is implemented and verified.
