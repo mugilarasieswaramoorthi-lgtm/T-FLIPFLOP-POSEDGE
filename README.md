@@ -68,10 +68,11 @@ DEVELOPED BY:MUGILARASI E
 REGISTER NO: 25017644
 
 **RTL LOGIC FOR FLIPFLOPS**
-<img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/4c6d6aa9-0a9a-47a4-980f-01ee19de275b" />
+<img width="1920" height="1080" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/c062c50e-78f8-4622-8730-cacd17eba2c3" />
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-<img width="1920" height="1080" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/c062c50e-78f8-4622-8730-cacd17eba2c3" />
+<img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/4c6d6aa9-0a9a-47a4-980f-01ee19de275b" />
+
 
 
 **RESULTS**
